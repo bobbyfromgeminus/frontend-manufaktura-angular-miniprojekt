@@ -1,13 +1,22 @@
 
 01. GIT
-    Git repó létrehozása klónozása
+    Git repó létrehozása.
+    Ha üres repót hozol létre és az angular projekteddel szeretnéd később összekötni, akkor leghamarabb a 03-as pont után tedd meg az alábbiak szerint:
+        echo "# maszkmester-angular" >> README.md - ha üres, vagy nem létezik a README.md fájlod
+        git init
+        git add README.md
+        git commit -m "first commit"
+        git branch -M main
+        git remote add origin https://github.com/felhasznalonev/reponev.git - figyelj, hogy jó neveket használj!
+        git push -u origin main
+
 
 02. ANGULAR
     Telepítjuk az Angulart, ha még nem tettük.
         npm i @angular/cli -g 
 
 03. ÚJ PROJEKT
-    Létrehozunk egy új ANgular projektet, majd belépünk a mappába.
+    Létrehozunk egy új Aggular projektet, majd belépünk a mappába.
         ng new projektneve
         cd projektneve
         code . -r
